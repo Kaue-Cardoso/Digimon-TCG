@@ -1,0 +1,226 @@
+html{
+    font-size: 16px;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url(../imagens/fundo-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  /* justify-content: space-evenly; */
+  /* overflow: hidden; */
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 2rem;
+}
+.head .logo {
+    width: 15rem;
+    height: 5rem;
+}
+.digimon-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* margin: 2rem 0; */
+}
+.btn-arow {
+    background-color: #FFF;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-details {
+    width: 2rem;
+    height: 2rem;
+}
+.btn-arow.btn-back {
+    transform: rotateY(180deg);
+}
+
+.btn-arow:hover {
+    background-color: #bebdc2;
+}
+.list-digimons {
+    width: 19rem;
+    height: 32rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    opacity: 0;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 0.625rem;
+    border-style: solid;
+    border-color: rgb(31, 31, 31);
+    border-width: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+    justify-content: space-between;
+}
+.card.select {
+    opacity: 1;
+    z-index: 1;
+}
+.background-1 {
+    background: url(../imagens/Desert4.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.background-2 {
+    background: url(../imagens/gelo.jpg) no-repeat;
+    background-size: cover;
+}
+.background-3 {
+    background: url(../imagens/4.png) no-repeat;
+    background-position: center;
+}
+.background-4 {
+    background: url(../imagens/floresta.png) no-repeat;
+    background-size: cover;
+}
+.background-5 {
+    background: url(../imagens/Beach.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.background-6 {
+    background: url(../imagens/cogu.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.background-7 {
+    background: url(../imagens/sky.jpg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+.background-8 {
+    background: url(../imagens/vision.png) no-repeat;
+    background-size: cover;
+    background-position:bottom;
+}
+.card .informations {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(10% 0, 90% 0, 80% 100%, 20% 100%);
+}
+.card .informations .name {
+    color: #323233;
+}
+.card .container{
+    padding: 0 0.75rem 0.75rem 0.75rem;
+}
+.cost {
+    background-color: rgba(255, 255, 255, 0.8);
+    clip-path: polygon(55% 0, 100% 55%, 53% 100%, 0 100%, 0 0);
+    width: 3.3rem;
+    height: 3.3rem;
+    position: absolute;
+    top: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    font-size: 2rem;
+}
+.cost p{
+    z-index: 2;
+    font-weight: bold;
+    color: #323233;
+}
+.element {
+    clip-path: polygon(55% 0, 100% 55%, 53% 100%, 0 100%, 0 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 1.5rem;
+    left: 13.2rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    padding-left: 0.2rem;
+    font-size: 2rem;
+}
+.element img{
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    transform: rotateY(180deg);
+}
+.card .top .life {
+    /* clip-path: polygon(30% 0, 70% 0, 80% 100%, 20% 100%); */
+    background: rgba(50, 50, 51, 1);
+    color: #f1ecff;
+    display: flex;
+    justify-content: center;
+}
+.card .container-image {
+    text-align: center;
+}
+.card .image-digimon {
+    max-width: 100%;
+    max-height: 15rem;
+    padding: 1rem;
+}
+.card .description {
+    background: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    clip-path: polygon(45% 0, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 29%, 27% 29%);
+    font-family: "Chakra Petch", sans-serif;
+}
+.card .description .attribute {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 25% 100%);
+}
+.card .description .types {
+    color: #dfdde6;
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+.card .description .organization {
+    align-items: center;
+    padding: 0.3rem;
+}
+.card .description .align {
+    display: flex;
+    justify-content: space-between;
+}
+.card .description .skills {
+    display: flex;
+    align-items: center;
+}
+.card .description .image {
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.1rem;
+}
+.card .description .invisible {
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.1rem;
+    opacity: 0;
+}

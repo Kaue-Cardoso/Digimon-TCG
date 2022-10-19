@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digimon Card Game</title>
+
+    <link
+      rel="shortcut icon"
+      href="src/imagens/digivice.png"
+      type="image/x-icon"
+    />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img src="src/imagens/digimon.png" alt="Digimon Card Game" class="logo" />
+    </header>
+
+    <main class="digimon-slider">
+      <button class="btn-arow btn-back" id="btn-back">
+        <img src="src/imagens/seta.png" class="btn-details" alt="Seta Voltar" />
+      </button>
+      <ul class="list-digimons">
+        <!---------- Agumon  -------->
+        <li class="card select background-1">
+          <div class="top">
+            <div class="cost">
+              <p>4</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/Fire.png" />
+            </div>
+            <div class="life"><h3>HP 400</h3></div>
+            <div class="informations">
+              <h2 class="name">Agumon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Agumon2.png"
+                alt="Agumon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Vaccine</h3>
+                <h3 class="types">Reptile</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Fire.png" class="image" alt="Fire" />
+                    <img src="src/imagens/Fire.png" class="invisible" alt="" />
+                    <p>Baby Flame</p>
+                  </div>
+                  <h4>80</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Fire.png" class="image" alt="Fire" />
+                    <img src="src/imagens/Fire.png" class="image" alt="Fire" />
+                    <p>Baby Burner</p>
+                  </div>
+                  <div>
+                    <h4>200</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Gabumon  -------->
+        <li class="card background-2">
+          <div class="top">
+            <div class="cost">
+              <p>3</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/ice.png" />
+            </div>
+            <div class="life"><h3>HP 500</h3></div>
+            <div class="informations">
+              <h2 class="name">Gabumon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Gabumon3.png"
+                alt="Gabumon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Data</h3>
+                <h3 class="types">Reptile</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Fire.png" class="image" alt="Fire" />
+                    <p>Petit Fire</p>
+                  </div>
+                  <h4>120</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Normal.png"
+                      class="image"
+                      alt="Normal"
+                    />
+                    <p>Horn Attack</p>
+                  </div>
+                  <div>
+                    <h4>80</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Gomamon  -------->
+        <li class="card background-3">
+          <div class="top">
+            <div class="cost">
+              <p>3</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/water.png" />
+            </div>
+            <div class="life"><h3>HP 400</h3></div>
+            <div class="informations">
+              <h2 class="name">Gomamon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Gomamon1.png"
+                alt="Gomamon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Vaccine</h3>
+                <h3 class="types">Sea Animal</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/water.png" class="image" alt="Agua" />
+                    <img
+                      src="src/imagens/water.png"
+                      class="invisible"
+                      alt="Agua"
+                    />
+                    <p>Marching Fishes</p>
+                  </div>
+                  <h4>100</h4>
+                  <!-- <p>100</p> -->
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/water.png" class="image" alt="Agua" />
+                    <img src="src/imagens/water.png" class="image" alt="Agua" />
+                    <p>Giant Water Current</p>
+                  </div>
+                  <div>
+                    <h4>200</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Tentomon  -------->
+        <li class="card background-4">
+          <div class="top">
+            <div class="cost">
+              <p>4</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/thunder.png" />
+            </div>
+            <div class="life"><h3>HP 300</h3></div>
+            <div class="informations">
+              <h2 class="name">Tentomon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/tento1.png"
+                alt="Tentomon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Virus</h3>
+                <h3 class="types">Insectoid</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/thunder.png"
+                      class="image"
+                      alt="Thunder"
+                    />
+                    <p>Petit Thunder</p>
+                  </div>
+                  <h4>150</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Normal.png"
+                      class="image"
+                      alt="Normal"
+                    />
+                    <p>Twice Arm</p>
+                  </div>
+                  <div>
+                    <h4>30</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Piyomon  -------->
+        <li class="card background-5">
+          <div class="top">
+            <div class="cost">
+              <p>3</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/Fire.png" />
+            </div>
+            <div class="life"><h3>HP 350</h3></div>
+            <div class="informations">
+              <h2 class="name">Piyomon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Piyomon.png"
+                alt="Piyomon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Vaccine</h3>
+                <h3 class="types">Bird</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Fire.png" class="image" alt="Fire" />
+                    <p>Magical Fire</p>
+                  </div>
+                  <h4>120</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Wind.png" class="image" alt="Wind" />
+                    <p>Spiral Wing</p>
+                  </div>
+                  <div>
+                    <h4>90</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Palmon  -------->
+        <li class="card background-6">
+          <div class="top">
+            <div class="cost">
+              <p>2</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/Plant.png" />
+            </div>
+            <div class="life"><h3>HP 200</h3></div>
+            <div class="informations">
+              <h2 class="name">Palmon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Palmon.png"
+                alt="Palmon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Data</h3>
+                <h3 class="types">Plant</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Normal.png"
+                      class="image"
+                      alt="Normal"
+                    />
+                    <img
+                      src="src/imagens/Plant.png"
+                      class="invisible"
+                      alt="Plant"
+                    />
+                    <p>Root Stretch</p>
+                  </div>
+                  <h4>40</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Plant.png"
+                      class="image"
+                      alt="Plant"
+                    />
+                    <img
+                      src="src/imagens/Plant.png"
+                      class="image"
+                      alt="Plant"
+                    />
+                    <p>Poison Ivy</p>
+                  </div>
+                  <div>
+                    <h4>150</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Patamon  -------->
+        <li class="card background-7">
+          <div class="top">
+            <div class="cost">
+              <p>3</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/Wind.png" />
+            </div>
+            <div class="life"><h3>HP 300</h3></div>
+            <div class="informations">
+              <h2 class="name">Patamon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Patamon.png"
+                alt="Patamon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Rookie</h3>
+                <h3 class="types">Data</h3>
+                <h3 class="types">Mammal</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Wind.png" class="image" alt="Wind" />
+                    <img
+                      src="src/imagens/Wind.png"
+                      class="invisible"
+                      alt="Wind"
+                    />
+                    <p>Air Shot</p>
+                  </div>
+                  <h4>60</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img src="src/imagens/Wind.png" class="image" alt="Wind" />
+                    <img src="src/imagens/Wind.png" class="image" alt="Wind" />
+                    <p>Thousand Wing</p>
+                  </div>
+                  <div>
+                    <h4>250</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+        <!---------- Tailmon  -------->
+        <li class="card background-8">
+          <div class="top">
+            <div class="cost">
+              <p>5</p>
+            </div>
+            <div class="element">
+              <img src="src/imagens/Light.png" />
+            </div>
+            <div class="life"><h3>HP 650</h3></div>
+            <div class="informations">
+              <h2 class="name">Tailmon</h2>
+            </div>
+          </div>
+          <section class="container">
+            <div class="container-image">
+              <img
+                src="src/imagens/Tailmon.png"
+                alt="Tailmon"
+                class="image-digimon"
+              />
+            </div>
+
+            <section class="description">
+              <div class="attribute">
+                <h3 class="types">Champion</h3>
+                <h3 class="types">Vaccine</h3>
+                <h3 class="types">Holy Beast</h3>
+              </div>
+              <div class="organization">
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Normal.png"
+                      class="image"
+                      alt="Normal"
+                    />
+                    <img
+                      src="src/imagens/Normal.png"
+                      class="image"
+                      alt="Normal"
+                    />
+                    <img src="src/imagens/Light.png" class="invisible" alt="" />
+                    <p>Neko Punch</p>
+                  </div>
+                  <h4>150</h4>
+                </div>
+                <div class="align">
+                  <div class="skills">
+                    <img
+                      src="src/imagens/Light.png"
+                      class="image"
+                      alt="Light"
+                    />
+                    <img
+                      src="src/imagens/Light.png"
+                      class="image"
+                      alt="Light"
+                    />
+                    <img
+                      src="src/imagens/Light.png"
+                      class="image"
+                      alt="Light"
+                    />
+                    <p>Cat Laser</p>
+                  </div>
+                  <div>
+                    <h4>300</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </li>
+      </ul>
+      <button class="btn-arow" id="btn-next">
+        <img
+          src="src/imagens/seta.png"
+          class="btn-details"
+          alt="seta avançar"
+        />
+      </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

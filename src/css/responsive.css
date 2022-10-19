@@ -1,0 +1,10 @@
+@media (max-width: 920px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media (min-width: 2000px) {
+    html{
+        font-size: 32px;
+    }
+}
