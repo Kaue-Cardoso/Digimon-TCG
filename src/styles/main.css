@@ -1,0 +1,47 @@
+@import './_variables.css';
+
+html { font-size: 16px }
+body {
+  font-family: var(--font-base);
+  background: url('../assets/images/bg_site.png') no-repeat center/cover;
+  min-height: 100vh;
+}
+.header { display: flex; justify-content: center; padding: 2rem 0 }
+.header__logo { width: 15rem }
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+.slider__btn {
+  background: #fff;
+  border-radius: 50%;
+  width: 3rem; height: 3rem;
+  border: none; cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: background 0.2s;
+}
+.slider__btn:hover { background: #bebdc2 }
+.slider__btn--back img { transform: rotateY(180deg) }
+.slider__list {
+  position: relative;
+  width: 19rem; height: 32rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.card {
+  position: absolute;
+  width: 100%; height: 100%;
+  opacity: 0;
+  border: .5rem solid var(--color-border);
+  border-radius: .625rem;
+  box-shadow: var(--shadow-lg);
+  transition: opacity .3s;
+  display: flex; flex-direction: column;
+}
+.card.is-active { opacity: 1; z-index: 1 }
+.card__top { position: relative; padding: 1rem }
+.card__cost,
+.card__element { position: absolute; background: rgba(255,255,255,1); }
+.menor{width: 50px; height: 50px;}
+/* ... demais regras agrupadas em BEM */

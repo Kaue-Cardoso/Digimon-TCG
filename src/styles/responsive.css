@@ -1,0 +1,6 @@
+@media (max-width: 920px) {
+  html { font-size: 14px }
+}
+@media (min-width: 2000px) {
+  html { font-size: 32px }
+}

@@ -1,0 +1,7 @@
+:root {
+  --font-base: 'Outfit', sans-serif;
+  --font-alt: 'Chakra Petch', sans-serif;
+  --color-border: #1f1f1f;
+  --shadow-lg: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  --gap: 1rem;
+}
