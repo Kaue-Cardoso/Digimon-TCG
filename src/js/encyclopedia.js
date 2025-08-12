@@ -98,7 +98,7 @@ async function loadDigimon(id) {
           <p>${digimon.levels[0].level}</p>
         </div>
         <div class="card_attribute">
-          <img src="src/assets/images/${digimon.attributes[0].attribute}.png" alt="${digimon.attributes[0].attribute}" /> 
+          <img src="./src/assets/images/${digimon.attributes[0].attribute}.png" alt="${digimon.attributes[0].attribute}" /> 
         </div>
       </div>
     `;
