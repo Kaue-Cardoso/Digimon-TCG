@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +12,8 @@
 
   <!-- Preload fontes -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" as="style" />
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap"
+    as="style" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet" />
 
@@ -21,25 +23,207 @@
   <link rel="stylesheet" href="src/styles/main.css" />
   <link rel="stylesheet" href="src/styles/responsive.css" />
 </head>
+
 <body>
-  <header class="header">
-    <img src="./src/assets/images/digimon.png" alt="Logo Digimon Card Game" class="header__logo" />
-  </header>
+  <div class="wrapper">
+    <div id="navbar-placeholder">
+    </div>
 
-  <main class="slider" role="region" aria-label="Seleção de Digimons">
-    <button id="btn-back" class="slider__btn slider__btn--back" aria-label="Voltar">
-      <img src="./src/assets/images/arrow.png" alt="ícone voltar" />
-    </button>
+    <main>
+      <section class="hero">
+        <video autoplay muted loop playsinline>
+          <source src="./src/assets/videos/video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+        <div class="conteudo">
+          <h1>Welcome To DigiWorld</h1>
+          <p>Scroll For More</p>
+        </div>
+      </section>
 
-    <ul class="slider__list">
-      <!-- Exemplo de card gerado dinamicamente via template -->
-    </ul>
 
-    <button id="btn-next" class="slider__btn slider__btn--next" aria-label="Avançar">
-      <img src="./src/assets/images/arrow.png" alt="ícone avançar" />
-    </button>
-  </main>
+      <section class="centralized">
+        <div class="know_digimon animation-container">
+          <h3 class="title_section">What are Digital Monsters?! <br> Let's take a look at their world!</h3>
+  
+          <article class="card animated-item">
+            <div class="card__title">
+                  <h4><span class="card__details">DATA 1:</span> <strong> DIGITAL MONSTERS</strong></h4> <br>
+                </div>
+            <div class="card__display">
+              <div class="card__header">
+                
+                <p>One day, an artificially intelligent virus began to spread among the world's computers. It changed its
+                  shape and form as it traveled through the network, and evolved into the life forms known as</p>
+                <p> <strong>Digital Monsters, or Digimon!!</strong>​</p>
+              </div>
+              <img class="card__image_01" src="./src/assets/images/Agumon_Hakase_2.jpg" alt="">
+  
+              <div class="card__content">
+                <p><span class="card__details"> Currently known primary traits</span></p>
+                <ul>
+                  <li>Born from eggs</li>
+                  <li>Are not differentiated into male or female</li>
+                  <li>Consume food in the Digital World as their energy source</li>
+                  <li>May die due to external factors such as sickness and death, or old age</li>
+                  <li>Do not carry out reproductive activity</li>
+                  <li>Upon death, they create a new generation by laying an egg</li>
+                  <li>Grow by changing their forms through Digivolution</li>
+                  <li>Natural instinct gives them powerful combat abilities</li>
+                  <li> ​The name for the digital life forms residing in the Digital World. They are the only
+                    creaturesindigenous
+                    to the Digital World, which highly resembles the real world.</li>
+                  <li>Many kinds of Digital Monsters exist, and their numbers have increased with each year as the Digital
+                    World
+                    expands.</li>
+                </ul>
+              </div>
+  
+            </div>
+  
+          </article>
+  
+          <article class="card animated-item">
+  
+            <div class="card__display">
+              <div class="card__header card__header_02">
+                <div class="card__title">
+                  <h4><span class="card__details">DATA 2:</span> <strong> DIGIVOLUTION</strong></h4> <br>
+                </div>
+                <p>Digimon are born from <strong>Digi-Eggs.</strong>​</p>
+                <p>Digimon grow when consuming programs and data,
+                  or when they triumph in battle, allowing them to Digivolve!
+                  They eventually die of old age and become Digi-Eggs again.
+  
+                  Digimon reside in the Earth's various electronic networks as well as in the Digital World. As they are
+                  essentially computer data they can download additional data to themselves which makes them stronger.
+                  <br>If
+                  they download enough data, Digivolution is triggered. During Digivolution, the Digimon's appearance
+                  changes and, in most instances, becomes significantly stronger than before. The resultant form of the
+                  Digimon almost always has a different name than the previous. However, the Digimon's consciousness
+                  remains
+                  unchanged. If a Digimon does not absorb enough data needed to maintain the form it will not be able to
+                  retain that form for long and revert to a lower Level in a matter of time.</p>
+              </div>
+              <div class="card_content_02">
+                <ul>Main Digivolution Stages (English adaptation terms with Japanese terms in brackets):
+                  <li>Fresh (幼年期 I Younenki I?, lit. "Baby I")</li>
+                  <li>In-Training (幼年期 II Younenki II?, lit. "Baby II")</li>
+                  <li>Rookie (成長期 Seichouki?, lit. "Child")</li>
+                  <li>Champion (成熟期 Seijukuki?, lit. "Adult")</li>
+                  <li>Ultimate (完全体 Kanzen-tai?, lit. "Perfect")</li>
+                  <li>Mega (究極体 Kyuukyoku-tai?, lit. "Ultimate")</li>
+                </ul>
+              </div>
+              <img class="card__image_02" src="./src/assets/images/agumon_shinka.png" alt="">
+              <div class="resize">
+                <img class="card__content_img" src="./src/assets/images/levels.png" alt="">
+                <div>
+                  <p>The evolutionary states of Digimon have "levels," with <strong>"Mega"</strong> at their pinnacle.</p>
+                  <p>Digimon possessing the unbridled power of Mega could be a formidable weaponin the network of the real
+                    world…</p>
+                </div>
+              </div>
+  
+            </div>
+  
+          </article>
+  
+          <article class="card animated-item">
+            <div class="card__title">
+                  <h4><span class="card__details">DATA 3:</span> <strong> Digital World</strong></h4> <br>
+                </div>
+            <div class="card__display">
+              <div class="card__header">
+                <p>Digimon live in a world known as the Digital World! <br>The Digital World is a complex digital
+                  universe, a space that exists in a parallel dimension to ours, composed of computer data. Its topography
+                  is varied and often illogical by our standards. It can feature everything from vast forests with
+                  electronic circuit trees to sandy deserts that are, in fact, firewalls of old systems. There are
+                  floating islands, seas of data, and mountain ranges that resemble stacks of code.
+                  <br>
+                  The passage of time in the Digital World is not linear like ours; it can be faster or slower depending
+                  on the region and events that affect it. Gravity is also inconsistent, working in some places and not in
+                  others, which allows entire islands to float in the digital sky.​
+                </p>
+  
+              </div>
+              <img class="card__image_01" src="./src/assets/images/digiworld.jpg" alt="">
+  
+              <div class="card__content">
+                <p><span class="card__details"> THE DIGITAL WORLD IS NOT STATIC</span></p>
+                <p>It is in constant evolution. New areas emerge from discarded data or
+                  bugs, while others may disappear. It is, essentially, the physical manifestation of all the networks and
+                  information from the human world. Problems in our internet systems, for example, can cause anomalies or
+                  distortions in the fabric of the Digital World, showing the strong connection between the two worlds,
+                  even if it's indirect and imperceptible to most of us.</p>
+              </div>
+  
+            </div>
+  
+          </article>
+        </div>
+  
+        <div>
+          <article>
+            <h3 class="title_section">Others Franchises</h3>
+            <div class="minicard_display">
+  
+              <div class="mini_cards">
+                <img class="minicard_image" src="./src/assets/images/digimon_game.jpg" alt="">
+                <div>
+                  <div class="minicard_title">GAMES</div>
+                  <div class="minicard_content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti incidunt dolore, sit perferendis nulla sint minus aliquam, reprehenderit, quaerat asperiores quo repudiandae.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mini_cards">
+                <img class="minicard_image" src="./src/assets/images/digimon_film.jpg" alt="">
+                <div>
+                  <div class="minicard_title">MOVIES</div>
+                  <div class="minicard_content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti incidunt dolore, sit perferendis nulla sint minus aliquam, reprehenderit, quaerat asperiores quo repudiandae.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mini_cards">
+                <img class="minicard_image" src="./src/assets/images/digimon_anime.jpg" alt="">
+                <div>
+                  <div class="minicard_title">ANIME</div>
+                  <div class="minicard_content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti incidunt dolore, sit perferendis nulla sint minus aliquam, reprehenderit, quaerat asperiores quo repudiandae.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="mini_cards">
+                <img class="minicard_image" src="./src/assets/images/digimon_card.webp" alt="">
+                <div>
+                  <div class="minicard_title">CARD GAME</div>
+                  <div class="minicard_content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam deleniti incidunt dolore, sit perferendis nulla sint minus aliquam, reprehenderit, quaerat asperiores quo repudiandae.</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <script type="module" src="src/js/slider.js"></script>
+
+    </main>
+
+    <div id="footer-placeholder">
+    </div>
+  </div>
+
+
+  <script src="/src/js/loadNavbar.js"></script>
+  <script src="/src/js/main_index.js"></script>
+  <script src="/src/js/loadFooter.js"></script>
 </body>
+
 </html>

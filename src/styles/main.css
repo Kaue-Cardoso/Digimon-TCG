@@ -1,47 +1,297 @@
 @import './_variables.css';
 
-html { font-size: 16px }
+html {
+  font-size: 16px
+}
+
 body {
   font-family: var(--font-base);
-  background: url('../assets/images/bg_site.png') no-repeat center/cover;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
-.header { display: flex; justify-content: center; padding: 2rem 0 }
-.header__logo { width: 15rem }
-.slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap);
+
+main {
+  flex: 1;
 }
-.slider__btn {
-  background: #fff;
-  border-radius: 50%;
-  width: 3rem; height: 3rem;
-  border: none; cursor: pointer;
-  box-shadow: var(--shadow-lg);
-  transition: background 0.2s;
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-.slider__btn:hover { background: #bebdc2 }
-.slider__btn--back img { transform: rotateY(180deg) }
-.slider__list {
+
+.hero {
   position: relative;
-  width: 19rem; height: 32rem;
-  display: flex; align-items: center; justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 5rem;
 }
-.card {
+
+.hero video {
   position: absolute;
-  width: 100%; height: 100%;
-  opacity: 0;
-  border: .5rem solid var(--color-border);
-  border-radius: .625rem;
-  box-shadow: var(--shadow-lg);
-  transition: opacity .3s;
-  display: flex; flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.card.is-active { opacity: 1; z-index: 1 }
-.card__top { position: relative; padding: 1rem }
-.card__cost,
-.card__element { position: absolute; background: rgba(255,255,255,1); }
-.menor{width: 50px; height: 50px;}
-/* ... demais regras agrupadas em BEM */
+
+.hero .conteudo {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  font-size: 1.3rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+strong {
+    color: var(--color-details);
+    text-transform: uppercase;
+  }
+
+.know_digimon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.title_section {
+    font-size: 2rem;
+    width: 70%;
+    padding: 2rem;
+    text-align: center;
+    justify-self: center;
+    color: var(--color-bg);
+    border-top: 3px solid rgb(223, 223, 223);
+  }
+
+.card {
+  padding: 2rem;
+  margin: 0px 3rem;
+  margin-bottom: 5rem;
+  width: auto;
+  text-align: start;
+  background-color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card__display {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__header {
+  margin-top: 1rem;
+
+  p {
+    font-size: 1.1rem;
+    text-align: justify;
+
+  }
+}
+.card__title {
+    border-bottom: 1px solid var(--color-details);
+    margin-bottom: .5rem;
+  }
+
+.card__details {
+  padding: .3rem;
+  color: var(--color-bg);
+  background-color: var(--color-details);
+}
+
+.card__image_01 {
+  width: 80%;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.card__image_02 {
+  width: 100%;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.card__content {
+  margin-top: 1rem;
+    text-align: justify;
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+
+  li {
+    margin-top: .2rem;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    list-style: disc;
+    font-size: 1rem;
+    color: var(--font-base);
+  }
+}
+
+.resize {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f2f1;
+  border: 1px solid var(--color-details);
+}
+
+.card__content_img {
+  align-self: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.minicard_display{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.mini_cards{
+  margin: 0px 3rem;
+  justify-self: center;
+  margin-bottom: 2rem;
+  width: auto;
+  background-color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.minicard_image{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.minicard_title{
+  padding: 2rem;
+  text-align: center;
+  justify-self: center;
+  width: 80%;
+  color: var(--color-details);
+  border-bottom: 1px solid var(--color-details);
+}
+.minicard_content{
+  padding: 2rem 0px;
+  width: 80%;
+  justify-self: center;
+  text-align: justify;
+  color: var(--color-details);
+}
+
+/* ANIMACAO */
+.animated-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (min-width:768px ){
+  .minicard_display{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero .conteudo {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .card__display {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+
+  .card__header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .card__image_01 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 100%;
+    padding-top: 1rem;
+    align-self: center;
+    height: auto;
+  }
+
+  .card__content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .card__header_02 {
+    grid-column: 1/3;
+  }
+
+  .card__image_02 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .card_content_02 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+  }
+
+  .resize {
+    grid-column: 1/3;
+    grid-row: 3/3;
+  }
+
+  .card__content_img {
+    height: 12rem;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .minicard_display{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .centralized{
+    width: 70%;
+    justify-self: center;
+  }
+  .mini_cards{
+    margin: 0px 0px;
+  }
+  .minicard_display{
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 4rem;
+  }
+  .hero .conteudo {
+    font-size: 4rem;
+  }
+  
+}

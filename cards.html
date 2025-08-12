@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Card Game</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="src/assets/images/digivice.png" type="image/x-icon" />
+
+  <!-- Preload fontes -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap"
+    as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/_reset.css" />
+  <link rel="stylesheet" href="src/styles/_variables.css" />
+  <link rel="stylesheet" href="src/styles/main_tcg.css" />
+  <link rel="stylesheet" href="src/styles/responsive.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div id="navbar-placeholder">
+    </div>
+
+    <main class="slider" role="region" aria-label="Seleção de Digimons">
+      <button id="btn-back" class="slider__btn slider__btn--back" aria-label="Voltar">
+        <img class="arrow" src="./src/assets/images/arrow.png" alt="ícone voltar" />
+      </button>
+
+      <ul class="slider__list">
+        <!-- Exemplo de card gerado dinamicamente via template -->
+      </ul>
+
+      <button id="btn-next" class="slider__btn slider__btn--next" aria-label="Avançar">
+        <img class="arrow" src="./src/assets/images/arrow.png" alt="ícone avançar" />
+      </button>
+    </main>
+
+
+    <div id="footer-placeholder">
+    </div>
+
+  </div>
+
+
+
+  <script src="/src/js/loadFooter.js"></script>
+  <script src="/src/js/loadNavbar.js"></script>
+  <script type="module" src="src/js/slider.js"></script>
+
+</body>
+
+</html>

@@ -2,6 +2,25 @@
   --font-base: 'Outfit', sans-serif;
   --font-alt: 'Chakra Petch', sans-serif;
   --color-border: #1f1f1f;
+  --color-bg:rgb(237, 237, 237);
+  --color-details: rgb(214, 91, 14);
   --shadow-lg: rgba(100,100,111,0.2) 0px 7px 29px 0px;
   --gap: 1rem;
+
+  --vaccine: rgb(23, 171, 50);
+  --data: rgb(21, 74, 209);
+  --virus: rgb(209, 21, 59);
+  --free: rgb(234, 189, 30);
+  --unknown: rgb(209, 90, 21);
+}
+
+
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: var(--font-base);
+  background: url('../assets/images/bg_site.png') no-repeat center/cover fixed ;
+  min-height: 100vh;
 }

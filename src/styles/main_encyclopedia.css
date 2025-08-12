@@ -1,0 +1,388 @@
+@import './_variables.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-alt), var(--font-base), Helvetica, sans-serif;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_box {
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+  background-color: rgb(220, 103, 30);
+  color: var(--color-bg);
+  width: 100%;
+}
+
+.title {
+  justify-content: center;
+  font-size: 2.1rem;
+  display: flex;
+
+  i {
+    align-items: center;
+  }
+}
+
+.inputs {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 700;
+  align-self: center;
+  text-align: center;
+}
+
+.input_box,
+#searchAttribute,
+#searchLevel,
+#searchBtn {
+  padding: .4rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#searchBtn {
+  margin: 1rem;
+  margin-top: 2rem;
+  align-self: center;
+  background-color: #fffefd;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: .8rem;
+  transition: transform 0.3s ease-in-out;
+
+  i {
+    vertical-align: middle;
+    padding-right: .3rem;
+    font-size: .8rem;
+  }
+}
+
+#searchBtn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+#digi_card {
+  display: grid;
+  width: 16rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(209, 90, 21);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card_content {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.card_img {
+  padding: 15px;
+  width: 90%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_attribute {
+  width: 100%;
+  text-align: end;
+}
+
+.card:hover {
+  .card_content {
+    background-color: rgb(209, 90, 21);
+    color: aliceblue;
+  }
+
+  .vaccine {
+    background-color: var(--vaccine);
+  }
+
+  .data {
+    background-color: var(--data);
+  }
+
+  .virus {
+    background-color: var(--virus);
+  }
+
+  .free {
+    background-color: var(--free);
+  }
+
+  .unknown {
+    background-color: var(--unknown);
+  }
+
+  .card_img {
+    transform: scale(1.09);
+  }
+
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.pagination button {
+  cursor: pointer;
+  color: var(--color-details);
+  font-size: 1rem;
+  border: solid 1px var(--color-details);
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 8px 16px;
+  margin: 0px .2rem;
+  text-decoration: none;
+}
+
+.pagination-ellipsis {
+  color: #605c5ca1;
+  font-size: 2rem;
+}
+
+.pagination button.active-page,
+#prevBtn,
+#nextBtn {
+  background-color: var(--color-details);
+  color: white;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+  background-color: var(--color-details);
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  align-content: center;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal_content {
+  background: white;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 60rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  .vaccine {
+    background-color: var(--vaccine);
+  }
+
+  .data {
+    background-color: var(--data);
+  }
+
+  .virus {
+    background-color: var(--virus);
+  }
+
+  .free {
+    background-color: var(--free);
+  }
+
+  .unknown {
+    background-color: var(--unknown);
+  }
+
+}
+
+.close {
+  color: #777777;
+  float: right;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.modal_display {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+
+}
+
+.modal_title {
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.modal_image {
+  align-self: center;
+
+  img {
+    max-width: 15rem;
+  }
+}
+
+.modal_text>p {
+  padding: 1.5rem 0px;
+  border-bottom: 1px dashed;
+  text-align: end;
+  display: flex;
+  justify-content: space-between;
+
+  strong {
+    padding: 0px .3rem;
+  }
+
+  .span_text {
+    color: black;
+    font-weight: 300;
+  }
+}
+
+
+.modal_description {
+  margin-top: 2rem;
+
+  p {
+    padding: .5rem .5rem;
+    text-align: justify;
+    font-weight: 300;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+}
+
+.modal_description p::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal_description p::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.modal_description_title {
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--color-bg);
+  padding: .3rem;
+  width: 100%;
+
+}
+
+@media (min-width: 530px) {
+  #digi_card {
+    width: 40rem;
+    padding: 0px 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  #digi_card {
+    width: 50rem;
+    padding: 0px 3rem;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+
+  .modal_display {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal_image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .modal_text {
+    width: 50%;
+    align-self: center;
+  }
+
+  .modal_description {
+
+    margin-top: 2rem;
+
+    p {
+      padding: .5rem .5rem;
+      max-height: 180px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #digi_card {
+    width: 65rem;
+    padding: 0px 3rem;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+
+  .inputs {
+    width: 50%;
+    justify-self: center;
+  }
+
+  #searchBtn {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #digi_card {
+    width: 100%;
+    padding: 0px 8rem;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+  }
+}

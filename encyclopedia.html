@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Card Game</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="src/assets/images/digivice.png" type="image/x-icon" />
+
+  <!-- Preload fontes -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap"
+    as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/_reset.css" />
+  <link rel="stylesheet" href="src/styles/_variables.css" />
+  <link rel="stylesheet" href="src/styles/main_encyclopedia.css" />
+  <link rel="stylesheet" href="src/styles/responsive.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="navbar-placeholder">
+    </div>
+
+    <main>
+
+
+      <div class="search_box">
+        <h1 class="title"><i class="icon fi fi-rr-globe"></i>ENCYCLOPEDIA</h1>
+        <div class="inputs">
+          <!-- Busca por nome -->
+          <div class="input">
+            <label for="searchName">Search</label>
+            <input class="input_box" type="text" id="searchName" placeholder="Enter Digimon name">
+          </div>
+
+          <div class="options">
+            <!-- Busca por atributo -->
+            <div class="input">
+              <label for="searchAttribute">Attribute:</label>
+              <select id="searchAttribute">
+                <option value="">Todos</option>
+                <option value="Vaccine">Vaccine</option>
+                <option value="Data">Data</option>
+                <option value="Virus">Virus</option>
+                <option value="Free">Free</option>
+                <option value="Unknown">Unknown</option>
+              </select>
+            </div>
+
+            <div class="input">
+              <label for="searchLevel">Level:</label>
+              <select id="searchLevel">
+                <option value="">Todos</option>
+                <option value="Baby I">Baby I</option>
+                <option value="Baby II">Baby II</option>
+                <option value="Child">Child</option>
+                <option value="Adult">Adult</option>
+                <option value="Perfect">Perfect</option>
+                <option value="Ultimate">Ultimate</option>
+              </select>
+            </div>
+            
+            <button id="searchBtn"><i class="fi fi-rr-search"></i>Buscar</button>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div id="digi_card"></div>
+
+      <!-- paginação -->
+      <div class="pagination">
+        <button id="prevBtn" disabled> Voltar </button>
+        <div id="pageButtons"></div>
+        <button id="nextBtn"> Avançar </button>
+      </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="digimonModal" class="modal">
+      <div class="modal_content">
+        <span id="closeModal" class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder">
+    </div>
+  </div>
+
+  <script src="/src/js/loadNavbar.js"></script>
+  <script src="/src/js/loadFooter.js"></script>
+  <script src="/src/js/encyclopedia.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+@import './_variables.css';
+
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: var(--font-base);
+  background: url('../assets/images/bg_site.png') no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.slider__btn {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__btn:hover {
+  background: #ffffff4d
+}
+
+.slider__btn--back img {
+  transform: rotateY(180deg)
+}
+
+.slider__list {
+  position: relative;
+  width: 22rem;
+  height: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: .5rem solid var(--color-border);
+  border-radius: .625rem;
+  box-shadow: var(--shadow-lg);
+  transition: opacity .3s;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: space-between;
+
+}
+
+.card.is-active {
+  opacity: 1;
+  z-index: 1
+}
+
+.card__top {
+  display: flex;
+  flex-direction: row;
+  height: 3.5rem;
+  justify-content: space-around;
+  text-align: center;
+  border-bottom: .2rem solid rgb(255, 255, 255);
+
+  .card__cost {
+    width: 25%;
+    height: 12%;
+    top: 5%;
+    left: 0%;
+    position: absolute;
+    align-content: center;
+    text-align: start;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    z-index: 1;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .card__cost::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(100% 50%, 80% 100%, 0 100%, 0 95%, 72% 95%, 95% 50%, 72% 5%, 0 5%, 0 0, 80% 0);
+    z-index: -1;
+  }
+
+  .card__titles {
+    font-size: .8rem;
+    position: static;
+    align-content: center;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(237, 237, 237, 0.531);
+  }
+  .card__element {
+    width: 25%;
+    height: 12%;
+    top: 5%;
+    left: 75%;
+    position: absolute;
+    align-content: center;
+    text-align: start;
+    padding-left: 1.7rem;
+    z-index: 1;
+    clip-path: polygon(100% 0%, 100% 53%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: rgb(255, 255, 255);
+
+    img {
+      padding-top: .2rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .card__element::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0% 50%, 20% 100%, 100% 100%, 100% 95%, 28% 95%, 5% 50%, 28% 5%, 100% 5%, 100% 0, 20% 0);
+    z-index: -1;
+  }
+}
+.card__hp {
+  position: absolute;
+  top: 11.2%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: .28rem 0px;
+
+}
+.deep{
+    background-color: rgb(24, 59, 174);
+}
+.roar{
+    background-color: rgb(227, 71, 24);
+}
+.night{
+  background-color: rgb(64, 5, 91);
+}
+.nature{
+  background-color: rgb(15, 149, 57);
+}
+.buster{
+background-color: rgb(181, 181, 39);
+}
+.metal{
+  background-color: rgb(132, 133, 132);
+}
+.jungle{
+  background-color: rgb(163, 214, 34);
+}
+
+
+.card__image {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 70%;
+  }
+}
+
+.card__details {
+  height: 30%;
+  background-color: rgba(237, 237, 237, 0.815);
+
+  .card__topics{
+    display: flex;
+    justify-content:space-evenly;
+    color: rgb(71, 71, 71);
+    padding: .2rem 0rem;
+    border-bottom: .2rem solid rgb(255, 255, 255);
+    align-items: center;
+
+    .card__fields{
+      display: flex;
+      letter-spacing: 10px;
+      img{
+        height: 25px;
+      }
+    }
+  }
+  .card__skills {
+    li{
+      padding-left: .5rem;
+      padding-right: 1rem;
+    }
+    .card_description{
+      font-size: .8rem;
+    }
+    .skills{
+      padding-top: .8rem;
+      display: flex;
+      justify-content: space-between;
+      .skills__tittle{
+        img {
+          width: 1rem;
+        }
+      }
+    }
+  }
+}
