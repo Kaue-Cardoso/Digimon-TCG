@@ -3,7 +3,7 @@ Este projeto é uma plataforma web interativa que permite explorar informações
 
 Link do Projeto: https://digimon-tcg-one.vercel.app/index.html
 
-#✨ Funcionalidades
+# ✨ Funcionalidades
 Página inicial apresentando o conceito e a proposta do projeto.
 
 Enciclopédia com pesquisa por nome, atributo ou field.
@@ -14,7 +14,7 @@ Cards interativos estilizados apenas com CSS e JavaScript, exibindo imagem, nív
 
 Modal de detalhes, acessível ao clicar em um card, mostrando informações completas.
 
-#🔗 Consumo da API
+# 🔗 Consumo da API
 Utilizamos a Digi-API para buscar os dados de cada Digimon.
 O consumo foi implementado com fetch no JavaScript, integrando:
 
@@ -24,12 +24,12 @@ Filtragem por parâmetros da API (name, attribute, field).
 
 Requisições individuais para exibir informações completas no modal.
 
-#🛠 Tecnologias utilizadas
+# 🛠 Tecnologias utilizadas
 HTML5: estrutura semântica e acessível.
 
 CSS3: layout responsivo e estilização completa dos elementos, incluindo animações e destaque por atributo.
 
 JavaScript (ES6): lógica de consumo da API, paginação, filtragem e interatividade.
 
-#🎯 Motivação
+# 🎯 Motivação
 Este site foi desenvolvido para unir prática de desenvolvimento front-end com o desafio de criar uma interface totalmente funcional e atrativa sem depender de bibliotecas ou frameworks. Além disso, é uma homenagem à franquia Digimon, oferecendo uma forma simples e divertida para fãs explorarem suas criaturas favoritas.
